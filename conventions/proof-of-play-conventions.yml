@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/proof-of-play-vrf-openapi.json
+authentication:
+  style: http-bearer
+  header: Authorization
+  detail: See authentication/proof-of-play-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v1
+  evidence: paths are prefixed with /v1/ (e.g. /v1/vrf/{chainId}/{txHash})
+idempotency:
+  supported: false
+  notes: >-
+    The one published operation is a GET (naturally idempotent); no
+    Idempotency-Key header or write-idempotency contract is documented.
+pagination:
+  supported: false
+  notes: Single-resource lookup by chainId + txHash; no list endpoints published.
+error_envelope:
+  format: unknown
+  notes: >-
+    Only a 200 response is documented in the spec; no error/problem schema is
+    published, so the error envelope shape is not captured.
+rate_limit_signal:
+  documented: false
+request_tracing:
+  documented: false
+cross_links:
+  authentication: authentication/proof-of-play-authentication.yml
+  lifecycle: lifecycle/proof-of-play-lifecycle.yml

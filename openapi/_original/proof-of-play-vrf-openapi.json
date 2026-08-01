@@ -1,0 +1,90 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Proof of Play API",
+    "description": "Proof of Play API documentation",
+    "license": {
+      "name": "MIT"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://staging.vrf.proofofplay.com"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/v1/vrf/{chainId}/{txHash}": {
+      "get": {
+        "operationId": "PublicController_process",
+        "summary": "Return a signed VRF transaction signature for 3rd party to call",
+        "parameters": [
+          {
+            "name": "txHash",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "chainId",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "vrf tx process successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublicProcessVrfTransactionResponseDto"
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Public API"]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PublicProcessVrfTransactionResponseDto": {
+        "type": "object",
+        "properties": {
+          "requestId": {
+            "type": "number",
+            "description": "The unique identifier for the request",
+            "example": "1234567890"
+          },
+          "roundNumber": {
+            "type": "number",
+            "description": "The round number used for randomness generation",
+            "example": "12345"
+          },
+          "randomNumber": {
+            "type": "string",
+            "description": "The generated random number",
+            "example": "100390681190810751958784661347623210498151382836405096200928376056671247975325"
+          },
+          "signature": {
+            "type": "string",
+            "description": "The cryptographic signature of the random number data",
+            "example": "0x3ba0095fdcd3704f83882efe53562bfaf84a34ae30765def05ce78d213b41ca568cf5da0c507be8b02c39ae47c377dbb5f7085e9a91919fd07dddc264f0df7d81c"
+          }
+        },
+        "required": ["requestId", "roundNumber", "randomNumber", "signature"]
+      }
+    }
+  }
+}

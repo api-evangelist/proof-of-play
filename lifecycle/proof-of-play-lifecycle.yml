@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/proof-of-play-vrf-openapi.json
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://docs.proofofplay.com/introduction
+environments:
+  - name: staging
+    base_url: https://staging.vrf.proofofplay.com
+    notes: >-
+      The published OpenAPI servers[] lists only a staging host for the vRNG
+      signed-message endpoint. A production host is not declared in the spec.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No deprecation policy or Sunset/Deprecation header support documented.
+sla:
+  url: null
+status_page: null
+deprecated_operations: []
+maturity:
+  vrng: live
+  token_mirroring: early-access
+  marketplace: closed-alpha
+  nosql_database: coming-soon

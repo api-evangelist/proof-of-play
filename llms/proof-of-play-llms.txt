@@ -1,0 +1,20 @@
+# Proof of Play Documentation
+
+## Docs
+
+- [Welcome](https://docs.proofofplay.com/introduction.md): Introduction to Proof of Play Onchain Services
+- [Marketplace API](https://docs.proofofplay.com/services/marketplace/about.md): Support peer-to-peer trading within a game or app. Works across both onchain and offchain inventory systems.
+- [NoSQL Database](https://docs.proofofplay.com/services/nosql-database.md): Onchain Entity-Component-System (ECS) database and indexer for fully onchain application development.
+- [Token Mirroring](https://docs.proofofplay.com/services/token-mirroring.md): Mirror ownership data of your NFTs to any chain.
+- [Verified Random Number Generator (vRNG)](https://docs.proofofplay.com/services/vrng/about.md): Fast, secure, and scalable onchain random number generation.
+- [Get vRNG signed message](https://docs.proofofplay.com/services/vrng/api.md): Generate a signature offchain to call `deliverSignedRandomNumber`. This can be useful for users who want to manually retry a random number.
+
+## OpenAPI Specs
+
+- [openapi](https://docs.proofofplay.com/api-reference/openapi.json)
+
+## Optional
+
+- [Documentation](https://docs.proofofplay.com)
+- [Proof of Play Homepage](https://proofofplay.com)
+- [Videos & Articles](https://proofofplay.com/resources)

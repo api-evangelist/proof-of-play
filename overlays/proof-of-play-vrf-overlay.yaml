@@ -1,0 +1,24 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Proof of Play vRNG API
+  version: 1.0.0
+extends: openapi/proof-of-play-vrf-openapi.json
+actions:
+- target: $.info
+  update:
+    x-apievangelist-provider: proof-of-play
+    x-apievangelist-service: vrng
+    x-apievangelist-category: [blockchain, gaming, randomness]
+- target: $.components.securitySchemes
+  description: >-
+    The spec references a `bearerAuth` requirement but never defines the scheme;
+    document it as an HTTP bearer token so tooling can resolve the requirement.
+  update:
+    bearerAuth:
+      type: http
+      scheme: bearer
+- target: $.paths['/v1/vrf/{chainId}/{txHash}'].get
+  update:
+    x-apievangelist-note: >-
+      Off-chain signature generation for on-chain vRNG delivery; the returned
+      signature is used to call deliverSignedRandomNumber on-chain.

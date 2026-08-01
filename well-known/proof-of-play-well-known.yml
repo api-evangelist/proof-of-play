@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/* on Proof of Play hosts
+hosts:
+- host: https://docs.proofofplay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://proofofplay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://staging.vrf.proofofplay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 530}
+  - {path: /.well-known/openid-configuration, status: 530}
+  - {path: /.well-known/oauth-authorization-server, status: 530}
+  - {path: /.well-known/api-catalog, status: 530}
+  - {path: /.well-known/ai-plugin.json, status: 530}
+- host: https://marketplace.proofofplay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+result: none
+notes: >-
+  No .well-known discovery documents are published on any Proof of Play host.
+  staging.vrf.proofofplay.com returned 530 (Cloudflare origin unreachable) for
+  all probes. Absence recorded as valid data; no raw files saved.

@@ -1,0 +1,14 @@
+{
+  "provider": "proof-of-play",
+  "sources": [
+    "proof-of-play-public-api-api-openapi.yml"
+  ],
+  "outputs": [
+    "proof-of-play-public-api-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

@@ -1,0 +1,7 @@
+generated: '2026-07-20'
+method: generated
+skills:
+- file: proof-of-play-vrf-signed-message.md
+  name: Get a signed vRNG message
+  api: openapi/proof-of-play-vrf-openapi.json
+  operations: [PublicController_process]

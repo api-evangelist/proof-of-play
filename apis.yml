@@ -1,7 +1,30 @@
 aid: proof-of-play
 name: Proof of Play
-description: Proof of Play is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Proof of Play is an a16z-backed gaming studio and on-chain infrastructure
+  company, founded by Amitt Mahajan and best known for the fully on-chain RPG
+  Pirate Nation. It builds a platform for high-performance, serverless on-chain
+  applications and games, exposing a set of developer services: a verified
+  random number generator (vRNG) for fast, secure on-chain randomness; a
+  Marketplace API for peer-to-peer trading across on-chain and off-chain
+  inventory; an on-chain NoSQL Entity-Component-System (ECS) database and
+  indexer; token mirroring to replicate NFT ownership data across chains; a
+  gasless relayer; and multichain scaling. Documentation and a public OpenAPI
+  are published at docs.proofofplay.com, and much of the stack is progressively
+  open-sourced under MIT on GitHub.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://media.proofofplay.com/public/POP_Home_OG.png
 url: https://raw.githubusercontent.com/api-evangelist/proof-of-play/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,77 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Gaming
+- Blockchain
+- Web3
+- Randomness
+- Onchain Infrastructure
+- NFT
+- Developer Services
+apis:
+- aid: proof-of-play:proof-of-play-public-api-api
+  name: Proof of Play Public API API
+  description: The Public API API from Proof of Play — 1 operation(s) for public api.
+  humanURL: https://docs.proofofplay.com/services/vrf
+  baseURL: https://staging.vrf.proofofplay.com
+  tags:
+  - Public API
+  properties:
+  - type: OpenAPI
+    url: openapi/proof-of-play-public-api-api-openapi.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DeveloperPortal
+  url: https://docs.proofofplay.com/introduction
+- type: Documentation
+  url: https://docs.proofofplay.com/introduction
+- type: APIReference
+  url: https://docs.proofofplay.com/api-reference/openapi.json
+- type: GettingStarted
+  url: https://docs.proofofplay.com/introduction
+- type: GitHubOrganization
+  url: https://github.com/proofofplay
+- type: Support
+  url: https://z7a9jnrajv8.typeform.com/to/Ywh9xVFF
+- type: Blog
+  url: https://www.proofofplay.com/resources
+- type: TermsOfService
+  url: https://arcade.piratenation.game/terms
+- type: PrivacyPolicy
+  url: https://arcade.piratenation.game/privacy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/proof-of-play
+- type: Twitter
+  url: https://x.com/ProofOfPlay
+- type: Authentication
+  url: authentication/proof-of-play-authentication.yml
+- type: Conventions
+  url: conventions/proof-of-play-conventions.yml
+- type: Lifecycle
+  url: lifecycle/proof-of-play-lifecycle.yml
+- type: Conformance
+  url: conformance/proof-of-play-conformance.yml
+- type: MCPServer
+  url: mcp/proof-of-play-mcp.yml
+- type: LLMsTxt
+  url: llms/proof-of-play-llms.txt
+- type: WellKnown
+  url: well-known/proof-of-play-well-known.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: AgenticAccess
+  url: agentic-access/proof-of-play-agentic-access.yml
+- type: DomainSecurity
+  url: security/proof-of-play-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1

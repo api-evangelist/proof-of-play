@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/proof-of-play-vrf-openapi.json
+standards:
+- id: http-bearer-auth
+  conforms: true
+  evidence: global security requirement bearerAuth (HTTP bearer token)
+- id: openapi-3.0
+  conforms: true
+  evidence: openapi 3.0.1 document published at docs.proofofplay.com/api-reference/openapi.json
+- id: oauth2
+  conforms: false
+- id: oidc
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no application/problem+json responses declared
+- id: pagination
+  conforms: false
+- id: idempotency
+  conforms: false

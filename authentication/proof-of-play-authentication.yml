@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/proof-of-play-vrf-openapi.json
+summary:
+  types: [http]
+  http_schemes: [bearer]
+  api_key_in: []
+  oauth2_flows: []
+notes: >-
+  The Proof of Play vRNG OpenAPI declares a global security requirement of
+  `bearerAuth` (HTTP bearer token) on the single public operation, but the spec
+  does not define the scheme under components.securitySchemes, so the bearer
+  format is not published. Calls to GET /v1/vrf/{chainId}/{txHash} carry an
+  Authorization: Bearer <token> header.
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  applied_to: [PublicController_process]
+  sources: [openapi/proof-of-play-vrf-openapi.json]
