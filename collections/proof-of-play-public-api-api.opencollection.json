@@ -1,0 +1,41 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Proof of Play Public API API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Public API",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Return a signed VRF transaction signature for 3rd party to call",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://staging.vrf.proofofplay.com/v1/vrf/:chainId/:txHash",
+            "params": [
+              {
+                "name": "txHash",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "chainId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Return a signed VRF transaction signature for 3rd party to call"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -2,16 +2,20 @@ generated: '2026-07-20'
 method: derived
 status: candidate
 source: openapi/proof-of-play-vrf-openapi.json
-notes: >-
-  No official hosted/remote MCP server was found for Proof of Play (checked docs
-  and the github.com/proofofplay org). This is a DERIVED candidate tool list,
-  one tool per OpenAPI operation, for a potential MCP server over the vRNG API.
+notes: No official hosted/remote MCP server was found for Proof of Play (checked docs and the github.com/proofofplay
+  org). This is a DERIVED candidate tool list, one tool per OpenAPI operation, for a potential MCP server
+  over the vRNG API.
 server:
   name: proof-of-play
   transport: http
 tools:
 - name: get_vrf_signed_message
-  description: >-
-    Return a signed VRF transaction signature so a 3rd party can call
-    deliverSignedRandomNumber for a given chainId and txHash.
+  description: Return a signed VRF transaction signature so a 3rd party can call deliverSignedRandomNumber
+    for a given chainId and txHash.
   source_operation: openapi/proof-of-play-vrf-openapi.json#PublicController_process
+deployment:
+  mode: none
+  verified: derived
+  tools: 1
+  checked: '2026-08-12'
+  source: catalog MCP census

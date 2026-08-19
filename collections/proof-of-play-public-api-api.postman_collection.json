@@ -1,0 +1,135 @@
+{
+  "item": [
+    {
+      "id": "cd93dc54-b978-4e98-bc66-8841a796ffe1",
+      "name": "Public API",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d4998f11-0607-416c-870b-1e83e808767a",
+          "name": "Return a signed VRF transaction signature for 3rd party to call",
+          "request": {
+            "name": "Return a signed VRF transaction signature for 3rd party to call",
+            "description": {},
+            "url": {
+              "path": [
+                "v1",
+                "vrf",
+                ":chainId",
+                ":txHash"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "txHash",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<number>",
+                  "key": "chainId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9db573a0-1fb9-41a1-b55c-e5c4096e00c2",
+              "name": "vrf tx process successful",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "vrf",
+                    ":chainId",
+                    ":txHash"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "txHash",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<number>",
+                      "key": "chainId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"requestId\": 8650.079876906131,\n  \"roundNumber\": 2026.1587553211814,\n  \"randomNumber\": \"100390681190810751958784661347623210498151382836405096200928376056671247975325\",\n  \"signature\": \"0x3ba0095fdcd3704f83882efe53562bfaf84a34ae30765def05ce78d213b41ca568cf5da0c507be8b02c39ae47c377dbb5f7085e9a91919fd07dddc264f0df7d81c\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://staging.vrf.proofofplay.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "9738ca21-fafa-4047-a4b6-88db47e92c57",
+    "name": "Proof of Play Public API API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Proof of Play API documentation",
+      "type": "text/plain"
+    }
+  }
+}
