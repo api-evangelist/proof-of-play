@@ -70,6 +70,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Website
+  url: https://proofofplay.com
 - type: Overlay
   url: overlays/proof-of-play-vrf-overlay.yaml
 - type: DeveloperPortal
