@@ -1,17 +1,13 @@
 aid: proof-of-play
 name: Proof of Play
-description: >-
-  Proof of Play is an a16z-backed gaming studio and on-chain infrastructure
-  company, founded by Amitt Mahajan and best known for the fully on-chain RPG
-  Pirate Nation. It builds a platform for high-performance, serverless on-chain
-  applications and games, exposing a set of developer services: a verified
-  random number generator (vRNG) for fast, secure on-chain randomness; a
-  Marketplace API for peer-to-peer trading across on-chain and off-chain
-  inventory; an on-chain NoSQL Entity-Component-System (ECS) database and
-  indexer; token mirroring to replicate NFT ownership data across chains; a
-  gasless relayer; and multichain scaling. Documentation and a public OpenAPI
-  are published at docs.proofofplay.com, and much of the stack is progressively
-  open-sourced under MIT on GitHub.
+description: 'Proof of Play is an a16z-backed gaming studio and on-chain infrastructure company, founded
+  by Amitt Mahajan and best known for the fully on-chain RPG Pirate Nation. It builds a platform for high-performance,
+  serverless on-chain applications and games, exposing a set of developer services: a verified random
+  number generator (vRNG) for fast, secure on-chain randomness; a Marketplace API for peer-to-peer trading
+  across on-chain and off-chain inventory; an on-chain NoSQL Entity-Component-System (ECS) database and
+  indexer; token mirroring to replicate NFT ownership data across chains; a gasless relayer; and multichain
+  scaling. Documentation and a public OpenAPI are published at docs.proofofplay.com, and much of the stack
+  is progressively open-sourced under MIT on GitHub.'
 deliveryModel:
   model: saas
   open_source: false
@@ -47,7 +43,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-09-16'
 tags:
 - Company
 - Gaming
@@ -59,7 +55,7 @@ tags:
 - Developer Services
 apis:
 - aid: proof-of-play:proof-of-play-public-api-api
-  name: Proof of Play Public API API
+  name: Proof of Play Public API
   description: The Public API API from Proof of Play — 1 operation(s) for public api.
   humanURL: https://docs.proofofplay.com/services/vrf
   baseURL: https://staging.vrf.proofofplay.com
@@ -108,7 +104,10 @@ common:
   url: conformance/proof-of-play-conformance.yml
 - type: X-MCPServerCandidate
   url: mcp/proof-of-play-mcp.yml
-  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
+  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate
+    — a tool list derived from the published API contracts, not an existing server. The scorer already
+    read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type
+    surfaces with a server that does not exist.'
 - type: LLMsTxt
   url: llms/proof-of-play-llms.txt
 - type: WellKnown
