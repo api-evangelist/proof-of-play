@@ -60,6 +60,8 @@ apis:
   humanURL: https://docs.proofofplay.com/services/vrf
   baseURL: https://staging.vrf.proofofplay.com
   tags:
+  - Public APIs
+  tags_raw:
   - Public API
   properties:
   - type: OpenAPI
