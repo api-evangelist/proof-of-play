@@ -1,6 +1,6 @@
-openapi: 3.0.1
+openapi: 3.2.0
 info:
-  title: Proof of Play Public API API
+  title: Proof of Play Public API
   description: Proof of Play API documentation
   license:
     name: MIT

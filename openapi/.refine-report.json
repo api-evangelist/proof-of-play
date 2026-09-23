@@ -1,7 +1,7 @@
 {
   "provider": "proof-of-play",
   "sources": [
-    "proof-of-play-public-api-api-openapi.yml"
+    "_original/proof-of-play-vrf-openapi.json"
   ],
   "outputs": [
     "proof-of-play-public-api-api-openapi.yml"
@@ -9,6 +9,13 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "proof-of-play-vrf-openapi.json: upgraded openapi 3.0.1 -> OpenAPI 3.2.0",
+    "proof-of-play-vrf-openapi.json: declared missing tag: Public API",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "proof-of-play-public-api-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
