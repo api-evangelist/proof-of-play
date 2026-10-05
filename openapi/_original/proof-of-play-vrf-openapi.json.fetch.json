@@ -1,0 +1,12 @@
+{
+ "url": "https://docs.proofofplay.com/api-reference/openapi.json",
+ "requested_url": "https://docs.proofofplay.com/api-reference/openapi.json",
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 2464,
+ "sha256": "59704b3885ba9d4f762e36ef6611fb532eb364a4749a391c4db4a7725d19a31a",
+ "fetched_at": "2026-10-04",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "byte-identical",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the archived file is byte-identical to what the provider serves."
+}
