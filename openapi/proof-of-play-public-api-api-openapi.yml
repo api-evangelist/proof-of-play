@@ -62,3 +62,9 @@ components:
       - roundNumber
       - randomNumber
       - signature
+x-provenance:
+  method: harvested
+  publisher: Proof of Play
+  source: https://docs.proofofplay.com/api-reference/openapi.json
+  note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
+    stamped by stamp-openapi-provenance.py (roadmap#793)
