@@ -64,6 +64,116 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Proof of Play is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Proof of Play is an a16z-backed gaming studio and on-chain infrastructure company, founded by Amitt Mahajan and best known for the fully on-chain RPG Pirate Nation. It builds a platform for high-performance, serverless on-chain applications and games, exposing a set of developer services: a verified random number generator (vRNG) for fast, secure on-chain randomness; a Marketplace API for peer-to-peer trading across on-chain and off-chain inventory; an on-chain NoSQL Entity-Component-System (ECS) database and indexer; token mirroring to replicate NFT ownership data across chains; a gasless relayer; and multichain scaling. Documentation and a public OpenAPI are published at docs.proofofplay.com, and much of the stack is progressively open-sourced under MIT on GitHub.
 
-Backed by: a16z
+**Areas:** Company · Gaming · Blockchain · Web3 · Randomness · Onchain Infrastructure · NFT · Developer Services
+
+## Proof of Play on APIs.io
+
+Everything profiled for Proof of Play is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/proof-of-play/](https://apis.io/providers/proof-of-play/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Proof of Play Public API](https://apis.io/apis/proof-of-play/proof-of-play-public-api-api/) — The Public API API from Proof of Play — 1 operation(s) for public api.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [proof-of-play](https://apis.io/servers/proof-of-play/proof-of-play/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Proof Of Play Agentic Access](https://apis.io/agentic-access/proof-of-play/proof-of-play-agentic-access/)
+
+#### Collections (1)
+
+Postman and Open Collection request collections.
+
+- [Proof of Play Public API API](https://apis.io/collections/proof-of-play/open-proof-of-play-public-api-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Proof Of Play Vrf Overlay](https://apis.io/overlays/proof-of-play/proof-of-play-vrf-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Proof Of Play Authentication](https://apis.io/security/proof-of-play/proof-of-play-authentication/)
+- [Proof Of Play Domain Security](https://apis.io/security/proof-of-play/proof-of-play-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://proofofplay.com)
+- [Documentation](https://docs.proofofplay.com/introduction)
+- [Getting started](https://docs.proofofplay.com/introduction)
+- [API reference](https://docs.proofofplay.com/api-reference/openapi.json)
+- [Support](https://z7a9jnrajv8.typeform.com/to/Ywh9xVFF)
+- [Blog](https://www.proofofplay.com/resources)
+- [Terms of service](https://arcade.piratenation.game/terms)
+- [Privacy policy](https://arcade.piratenation.game/privacy)
+- [GitHub](https://github.com/proofofplay)
+
+## API Evangelist rating
+
+**Kin Score 34.0** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.2 |
+| Contract governance | 4.5 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 51.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 21.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/proof-of-play/](https://apis.io/providers/proof-of-play/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Proof of Play: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/proof-of-play/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
